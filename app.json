@@ -5,6 +5,26 @@
       "bundler": "metro"
     },
     "name": "BookFinder",
-    "slug": "BookFinder"
+    "slug": "book-finder",
+    "plugins": [
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access camera."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "601bad06-d0f9-408a-88ab-710f5704ca0c"
+      }
+    },
+    "owner": "dinya",
+    "android": {
+      "package": "com.dinya.bookfinder"
+    },
+    "ios": {
+      "bundleIdentifier": "com.dinya.bookfinder"
+    }
   }
 }
